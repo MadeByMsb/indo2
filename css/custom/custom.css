@@ -73,7 +73,7 @@
     }
 
     .image1 {
-      background-image: url(../images/aviation1.jpg);
+      background-image: url(../../img/aviation1.jpg);
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
