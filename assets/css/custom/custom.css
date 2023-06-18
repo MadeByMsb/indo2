@@ -74,13 +74,14 @@
   }
 
   .image1 {
-    background-image: url(../../img/aviation1.jpg);
+    /* background-image: url(../../img/aviation1.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 177px;
-    margin-left: -230px;
+    margin-left: -230px; */
+    display:none;
   }
 
   .cs-section_heading {
@@ -245,7 +246,7 @@
 }
 
 .btn2 {
-  background-color: #7B7D7C;
+  background-color:#ffec5d;
   color: rgb(255, 255, 255);
   font-weight: 700;
   padding-left: 20px;
@@ -262,7 +263,7 @@
 }
 
 .btn3 {
-  background-color: #7B7D7C;
+  background-color: #ffec5d;
   color: rgb(255, 255, 255);
   font-weight: 700;
   padding-left: 20px;
@@ -276,6 +277,7 @@
   .c1 {
     display: none;
   }
+ 
 }
 
 body{
@@ -283,10 +285,10 @@ body{
 }
 
 .video-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 498px;
+    height: 878px;
+    z-index: -1;
 }

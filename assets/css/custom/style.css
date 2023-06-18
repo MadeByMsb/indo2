@@ -313,7 +313,9 @@ reference h4 span,
  .navbar-default .navbar-nav > .active > a:focus,
  .navbar-default .navbar-nav > .active > a:hover {
   background-color: none;
-  color: #7B7D7C !important;   
+  background: linear-gradient(to right, #bb913d 0%, #ffec5d 100%);
+							-webkit-background-clip: text;
+							-webkit-text-fill-color: transparent;   
   font-weight:500; 
 }
 
@@ -333,8 +335,9 @@ reference h4 span,
 }
 
 .address-sec > .address-sec-1:hover > .address-sec-2 >.address-img > i { 
-	color:#7B7D7C !important;
-}
+  background: linear-gradient(to right, #bb913d 0%, #ffec5d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
 
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span{
@@ -365,7 +368,7 @@ reference h4 span,
 #work-bar::before,
 .instagram-bg,
 .btn {
-  background-color: #7B7D7C;
+  background-color: linear-gradient(to right, #bb913d 0%, #ffec5d 100%);
 }
 
 .pricing-top {
@@ -620,7 +623,7 @@ reference h4 span,
 
 .btn {
   border: none;  
-  color: #ffffff;
+  color: black;
   cursor: pointer;
   font-family: inherit;  
   font-weight: 600;
@@ -1939,7 +1942,9 @@ label {
 	}
 
 	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-	  color: #7B7D7C !important;
+	  background: linear-gradient(to right, #bb913d 0%, #ffec5d 100%);
+							-webkit-background-clip: text;
+							-webkit-text-fill-color: transparent;
 	}
 
 	#nav-1 li, #nav li {
