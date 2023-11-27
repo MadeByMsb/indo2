@@ -34,6 +34,18 @@
 </head>
 
 <style>
+	.nav-header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		/* Set an appropriate height if needed */
+	}
+
+	.nav-title {
+		text-align: center;
+	}
+
 	.header-image {
 		background-image: url(assets/img/bg4.png);
 	}
@@ -75,7 +87,8 @@
 	.nav {
 		height: auto;
 		width: 100%;
-		background-color: #04091D;
+		/* 04091D */
+		background-color: #000;
 		position: relative;
 		display: flex;
 		flex-direction: column;
@@ -88,10 +101,13 @@
 	}
 
 	.nav>.nav-header>.nav-title {
-		display: inline-block;
+		display: flex;
 		font-size: 22px;
+		justify-content: center;
+		align-items: center;
+		/* Add this line to vertically center the content */
 		color: #fff;
-		padding: 20px 10px 10px 60px;
+		padding: 20px 10px 10px 480px;
 	}
 
 	.nav>.nav-btn {
@@ -206,8 +222,8 @@
 
 
 	.imgg5 {
-		width: 237px;
-		margin-bottom: -32px;
+		width: 302px;
+		margin-bottom: -23px;
 	}
 
 	@media (max-width: 600px) {
@@ -222,7 +238,6 @@
 	<!-- PAGE LAYOUT STARTS HERE -->
 	<!--================================= NAVIGATION START =============================================-->
 	<div class="nav">
-		<input type="checkbox" id="nav-check">
 		<div class="nav-header">
 			<div class="nav-title">
 				<img src="assets/img/logo.png" class="imgg5">
@@ -238,7 +253,7 @@
 
 		<div class="nav-links">
 			<img src="https://static.wixstatic.com/media/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png/v1/fill/w_550,h_10,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png"
-				alt="" style="height:10px;object-fit:cover;margin-left: -88px;
+				alt="" style="height:10px;object-fit:cover;margin-left: -360px;
 				" srcset="https://static.wixstatic.com/media/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png/v1/fill/w_550,h_10,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png 1x, https://static.wixstatic.com/media/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png/v1/fill/w_1100,h_20,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png 2x"
 				fetchpriority="high">
 			<a href="index.html">HOME</a>
@@ -249,46 +264,59 @@
 			<a href="testimonials.html">TESTIMONIALS</a>
 			<a href="conatact.html">CONTACT US</a>
 
+			<img src="https://static.wixstatic.com/media/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png/v1/fill/w_550,h_10,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png"
+				alt="" style="height:10px;object-fit:cover;margin-left: 22px;
+			" srcset="https://static.wixstatic.com/media/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png/v1/fill/w_550,h_10,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png 1x, https://static.wixstatic.com/media/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png/v1/fill/w_1100,h_20,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png 2x"
+				fetchpriority="high">
 		</div>
 	</div>
 	<!--================================= NAVIGATION ENDS ==============================================-->
 	<!--=================================  HEADER START ==========================================-->
+	<style>
+		.header-video {
+			position: relative;
+			width: 100vw;
+			height: 100vh;
+		}
 
-	<div class="swiper mySwiper">
+		.background-video {
+			width: 100%;
+			height: 332px;
+			object-fit: cover;
+		}
 
-		<div class="swiper-wrapper">
-			<div class="swiper-slide">
-				<div class="header-image header-menu-1 clearfix">
-					<div class="header-section">
-						<div class="container">
-							<div class="row">
-								<div class="col-sm-12 header-div header-div-center heading-1">
-									<img class="this3" src="assets/img/heading1.png" width="50%"><br>
-									<!-- <a type="submit" class="btn btn-txt ">Get Started</a> -->
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-slide">
-				<div class="header-image header-menu-1 clearfix">
-					<div class="header-section">
-						<div class="container">
-							<div class="row">
-								<div class="col-sm-12 header-div header-div-center heading-1">
-									<img class="this3" src="assets/img/heading2.png" width="50%"><br>
+		.content-overlay {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			color: #fff;
+		}
 
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		.content-overlay h1 {
+			font-size: 2em;
+			margin-bottom: 246px;
+			color: black;
+			font-weight: 700;
+		}
+	</style>
 
+	<div class="header-video">
+		<video class="background-video" loop muted autoplay playsinline>
+			<source src="video.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
 
+		<!-- Optional: Add content overlay -->
+		<div class="content-overlay">
+			<h1>Pledge to Fledge
+				<img src="air.webp" width="10%">
+			</h1>
+			<!-- Add other content as needed -->
 		</div>
 	</div>
+
 
 	<!--================================= HEADER ENDS ============================================-->
 	<!--=================================  ABOUT ME START ==========================================-->
