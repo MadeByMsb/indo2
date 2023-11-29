@@ -1,51 +1,74 @@
 .cs-site_branding {
-    display: inline-block;
-    margin-top: 15px;
-  }
+  display: inline-block;
+  margin-top: 15px;
+}
 
-  .cs-funfact_wrap_2 .cs-funfacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: -12px;
-  }
+.cs-funfact_wrap_2 .cs-funfacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: -12px;
+}
 
-  .cs-shine_hover_1 {
-    position: relative;
-    overflow: hidden;
-    margin-left: -278px;
-  }
+.cs-shine_hover_1 {
+  position: relative;
+  overflow: hidden;
+  margin-left: -278px;
+}
 
-  .cs-shine_hover_1::before {
-    content: '';
-    position: null;
-    top: 0;
-    left: null;
-    z-index: null;
-    width: 50%;
-    height: 100%;
-    background: null;
-    background: null;
-    -webkit-transform: null;
-    transform: null;
-    z-index: 1;
-  }
+.cs-shine_hover_1::before {
+  content: '';
+  position: null;
+  top: 0;
+  left: null;
+  z-index: null;
+  width: 50%;
+  height: 100%;
+  background: null;
+  background: null;
+  -webkit-transform: null;
+  transform: null;
+  z-index: 1;
+}
+.section1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -167px;
+}
 
-  .section1 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 70px;
-  }
+.column1 {
+  flex: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
+.image1 {
+  background-image: url(../images/aviation1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 305px;
+  margin-left: -230px;
+}
+
+.text1 {
+  justify-content: left;
+  text-align: justify;
+}
+
+.cs-section_heading {
+  margin-top: 65px;
+}
+
+@media (max-width: 768px) {
   .column1 {
-    flex: 50%;
-    padding: 20px;
-    box-sizing: border-box;
+    flex: 100%;
   }
 
   .image1 {
@@ -54,79 +77,77 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 305px;
+    padding: 177px;
     margin-left: -230px;
   }
 
-  .text1 {
-    justify-content: left;
-    text-align: justify;
-  }
-
   .cs-section_heading {
-    margin-top: 65px;
+    margin-top: 40px;
   }
+}
 
-  @media (max-width: 768px) {
-    .column1 {
-      flex: 100%;
-    }
+.bttn1 {
+  background-color: #f4ca5800;
+  border: 1px solid white;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 7px;
+}
 
-    .image1 {
-      background-image: url(../images/aviation1.jpg);
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      padding: 177px;
-      margin-left: -230px;
-    }
+.bttn1:hover {
+  background-color: #ffffff;
+  color: black;
+}
 
-    .cs-section_heading {
-      margin-top: 40px;
-    }
+.placement-section {
+  text-align: center;
+}
 
-  }
+.section-heading {
+  font-size: 24px;
+  font-weight: bold;
+}
 
-  .bttn1 {
-    background-color: #f4ca5800;
-    border: 1px solid white;
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 7px;
-  }
+.main-heading {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
 
-  .bttn1:hover {
-    background-color: #ffffff;
-    color: black;
-  }
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  .placement-section {
-    text-align: center;
-  }
+.col1 {
+  flex-basis: 50%;
+  padding: 0 15px;
+}
 
-  .section-heading {
-    font-size: 24px;
-    font-weight: bold;
-  }
+.bttn2 {
+  background-color: #f4ca5800;
+  border: 1px solid white;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 7px;
+  margin-left: -400px;
+}
 
-  .main-heading {
-    font-size: 48px;
-    margin-bottom: 30px;
-  }
+.bttn2:hover {
+  background-color: white;
+  color: black;
+}
 
-  .row1 {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
+@media (max-width: 768px) {
   .col1 {
-    flex-basis: 50%;
-    padding: 0 15px;
+    flex: 100%;
   }
 
   .bttn2 {
@@ -139,141 +160,123 @@
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 7px;
-    margin-left: -400px;
+    margin-left: -189px;
   }
+}
 
-  .bttn2:hover {
-    background-color: white;
-    color: black;
+.pp {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.placement-image {
+  margin-top: 20px;
+  max-width: 100%;
+  height: 436px;
+}
+
+.cs-slider.cs-style3
+  .slick-active
+  .cs-portfolio.cs-style1
+  .cs-portfolio_info_bg {
+  left: 35px;
+  top: -47px;
+  opacity: 1;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.cs-slider.cs-style3 .cs-portfolio.cs-style1 .cs-portfolio_info_bg {
+  left: -20px;
+  top: 20px;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.cs-portfolio.cs-style1 .cs-portfolio_info_bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  left: 0;
+  top: 0;
+}
+
+.cs-accent_bg,
+.cs-accent_bg_hover:hover {
+  background-color: #626262d4;
+}
+
+.cs-slider.cs-style3 .slick-active .cs-portfolio.cs-style1 .cs-portfolio_title {
+  left: 0px;
+  opacity: 1;
+  top: -70px;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.cs-slider.cs-style3
+  .slick-active
+  .cs-portfolio.cs-style1
+  .cs-portfolio_subtitle {
+  left: 0px;
+  opacity: 1;
+  top: -65px;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+.cs-portfolio.cs-style1 .cs-portfolio_subtitle::after {
+  content: '';
+  height: 1px;
+  width: 20px;
+  background-color: currentColor;
+  border-radius: 3px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  color: transparent;
+  margin-top: 2px;
+}
+
+@media screen and (min-width: 992px) {
+  .cs-height_150 {
+    height: 32px;
   }
+}
 
-  @media (max-width: 768px) {
-    .col1 {
-      flex: 100%;
-    }
+.btn2 {
+  background-color: #7b7d7c;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 7px;
+}
 
-    .bttn2 {
-      background-color: #f4ca5800;
-      border: 1px solid white;
-      color: rgb(255, 255, 255);
-      font-weight: 700;
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      border-radius: 7px;
-      margin-left: -189px;
-    }
-  }
-
-  .pp {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    text-align: justify;
-  }
-
-  .placement-image {
-    margin-top: 20px;
-    max-width: 100%;
-    height: 436px;
-  }
-
-  .cs-slider.cs-style3 .slick-active .cs-portfolio.cs-style1 .cs-portfolio_info_bg {
-    left: 35px;
-    top: -47px;
-    opacity: 1;
-    -webkit-transition-delay: 0.4s;
-    transition-delay: 0.4s;
-  }
-
-  .cs-slider.cs-style3 .cs-portfolio.cs-style1 .cs-portfolio_info_bg {
-    left: -20px;
-    top: 20px;
-    opacity: 0;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-  }
-
-  .cs-portfolio.cs-style1 .cs-portfolio_info_bg {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    left: 0;
-    top: 0;
-  }
-
-  .cs-accent_bg,
-  .cs-accent_bg_hover:hover {
-    background-color: #626262d4;
-  }
-
-  .cs-slider.cs-style3 .slick-active .cs-portfolio.cs-style1 .cs-portfolio_title {
-    left: 0px;
-    opacity: 1;
-    top: -70px;
-    -webkit-transition-delay: 0.5s;
-    transition-delay: 0.5s;
-  }
-
-  .cs-slider.cs-style3 .slick-active .cs-portfolio.cs-style1 .cs-portfolio_subtitle {
-    left: 0px;
-    opacity: 1;
-    top: -65px;
-    -webkit-transition-delay: 0.6s;
-    transition-delay: 0.6s;
-  }
-
-  .cs-portfolio.cs-style1 .cs-portfolio_subtitle::after {
-    content: '';
-    height: 1px;
-    width: 20px;
-    background-color: currentColor;
-    border-radius: 3px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    color: transparent;
-    margin-top: 2px;
-  }
-
-  @media screen and (min-width: 992px) {
-    .cs-height_150 {
-      height: 32px;
-    }
-  }
-
+@media (max-width: 768px) {
   .btn2 {
-    background-color: #7B7D7C;
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 7px;
+    display: none;
   }
+}
 
-  @media (max-width: 768px) {
-    .btn2 {
-      display: none;
-    }
-  }
+.btn3 {
+  background-color: #7b7d7c;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 7px;
+}
 
-  .btn3 {
-    background-color: #7B7D7C;
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 7px;
+@media screen and (min-width: 1200px) {
+  .c1 {
+    display: none;
   }
-
-  @media screen and (min-width: 1200px) {
-    .c1 {
-      display: none;
-    }
-  }
-  
+}

@@ -39,7 +39,7 @@
 .section1 {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -4px;
+  margin-top: -167px;
 }
 
 .column1 {
@@ -81,13 +81,12 @@
     background-size: cover;
     padding: 177px;
     margin-left: -230px; */
-    display:none;
+    display: none;
   }
 
   .cs-section_heading {
     margin-top: 40px;
   }
-
 }
 
 .bttn1 {
@@ -180,7 +179,10 @@
   height: 436px;
 }
 
-.cs-slider.cs-style3 .slick-active .cs-portfolio.cs-style1 .cs-portfolio_info_bg {
+.cs-slider.cs-style3
+  .slick-active
+  .cs-portfolio.cs-style1
+  .cs-portfolio_info_bg {
   left: 35px;
   top: -47px;
   opacity: 1;
@@ -218,7 +220,10 @@
   transition-delay: 0.5s;
 }
 
-.cs-slider.cs-style3 .slick-active .cs-portfolio.cs-style1 .cs-portfolio_subtitle {
+.cs-slider.cs-style3
+  .slick-active
+  .cs-portfolio.cs-style1
+  .cs-portfolio_subtitle {
   left: 0px;
   opacity: 1;
   top: -65px;
@@ -246,7 +251,7 @@
 }
 
 .btn2 {
-  background-color:#ffec5d;
+  background-color: #ffec5d;
   color: rgb(255, 255, 255);
   font-weight: 700;
   padding-left: 20px;
@@ -277,18 +282,17 @@
   .c1 {
     display: none;
   }
- 
 }
 
-body{
+body {
   position: relative;
 }
 
 .video-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 498px;
-    height: 878px;
-    z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 498px;
+  height: 878px;
+  z-index: -1;
 }
