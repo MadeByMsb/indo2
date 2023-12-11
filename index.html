@@ -101,10 +101,10 @@
 	}
 
 	.nav>.nav-header>.nav-title {
-		display: flex;
+		display: inline-block;
 		font-size: 22px;
-		justify-content: center;
-		align-items: center;
+		/* justify-content: center;
+		align-items: center; */
 		/* Add this line to vertically center the content */
 		color: #fff;
 		padding: 20px 10px 10px 480px;
@@ -264,7 +264,9 @@
 	<!-- PAGE LAYOUT STARTS HERE -->
 	<!--================================= NAVIGATION START =============================================-->
 	<div class="nav">
-		<div class="nav-header">
+		<div class="nav-header" style="
+	width: 100%;
+	">
 			<div class="nav-title">
 				<img src="assets/img/logo.png" class="imgg5">
 			</div>
@@ -277,24 +279,33 @@
 			</label>
 		</div>
 
-		<div class="nav-links">
+		<div class="nav-links" style="
+	width: 100%;
+	justify-content: center;
+	">
 			<img src="https://static.wixstatic.com/media/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png/v1/fill/w_550,h_10,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png"
-				alt="" style="height:10px;object-fit:cover;margin-left: -360px;
+				alt="" style="
+				/* height:10px; */
+				/* object-fit:cover; */
+				/* margin-left: -360px; */
+				width: 100%;
 				" srcset="https://static.wixstatic.com/media/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png/v1/fill/w_550,h_10,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png 1x, https://static.wixstatic.com/media/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png/v1/fill/w_1100,h_20,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png 2x"
 				fetchpriority="high">
-			<a href="index.html">HOME</a>
-			<a href="about.html">ABOUT US</a>
-			<a href="courses.html">COURSES</a>
-			<a href="placements.html">PLACEMENTS</a>
-			<a href="gallery.html">GALLERY</a>
-			<a href="testimonials.html">TESTIMONIALS</a>
+			<a href="/">HOME</a>
+			<a href="/about">ABOUT US</a>
+			<a href="/courses">COURSES</a>
+			<a href="/placements">PLACEMENTS</a>
+			<a href="/gallery">GALLERY</a>
+			<a href="/testimonials">TESTIMONIALS</a>
 			<a href="conatact.html">CONTACT US</a>
 
 			<img src="https://static.wixstatic.com/media/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png/v1/fill/w_550,h_10,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png"
-				alt="" style="     height: 10px;
-				object-fit: cover;
-				margin-left: 15px;
-				width: 211px;
+				alt="" style="
+				/* height: 10px; */
+				/* object-fit: cover; */
+				/* margin-left: 15px; */
+				/* width: 211px; */
+				width: 100%;
 			" srcset="https://static.wixstatic.com/media/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png/v1/fill/w_550,h_10,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png 1x, https://static.wixstatic.com/media/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png/v1/fill/w_1100,h_20,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/6cfbae_79033b107d3546f4b37908f86a502abc~mv2.png 2x"
 				fetchpriority="high">
 		</div>
@@ -315,6 +326,10 @@
 		}
 
 		.content-overlay {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
 			position: absolute;
 			top: 50%;
 			left: 50%;
@@ -324,6 +339,8 @@
 		}
 
 		.content-overlay h1 {
+			text-align: center;
+
 			font-size: 2em;
 			margin-bottom: 246px;
 			color: rgb(255, 255, 255);
@@ -395,11 +412,10 @@
 		<!-- Optional: Add content overlay -->
 		<div class="content-overlay">
 
-			<h1 class=""><a href="https://check.so" class="btn-shine" target="_blank">Elevate Your Career With
+			<h1 class=""><a href="#!" class="btn-shine">Elevate Your Career With
 					Cockpit.</a>
 				<img src="air.webp" width="10%">
 			</h1>
-			<!-- Add other content as needed -->
 		</div>
 	</div>
 
