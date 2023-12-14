@@ -16,7 +16,7 @@ $(document).on("ready", function () {
 
   if (topx < 230) {
     menu_bar.fadeIn().addClass("fixed-header").css({
-      "background-color": "#04091D",
+      "background-color": "#000000",
       color: "#ffffff",
       "box-shadow": "0px 0px 5px rgba(0,0,0,0.3)",
     });
@@ -31,7 +31,7 @@ $(document).on("ready", function () {
     }
   } else {
     menu_bar.removeClass("fixed-header").css({
-      "background-color": "#04091D",
+      "background-color": "#000000",
       color: "#ffffff",
       "box-shadow": "0px 0px 5px rgba(0,0,0,0.3)",
     });
@@ -52,7 +52,7 @@ $(document).on("ready", function () {
 
     if (y >= 230) {
       menu_bar.fadeIn().addClass("fixed-header").css({
-        "background-color": "#04091D",
+        "background-color": "#000000",
         color: "#ffffff",
         "box-shadow": "0px 0px 5px rgba(0,0,0,0.3)",
       });
@@ -69,7 +69,7 @@ $(document).on("ready", function () {
       }
     } else {
       menu_bar.removeClass("fixed-header").css({
-        "background-color": "#04091D",
+        "background-color": "#000000",
         color: "#ffffff",
         "box-shadow": "0px 0px 5px rgba(0,0,0,0.3)",
       });

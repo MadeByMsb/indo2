@@ -22,7 +22,7 @@ $(document).on("ready", function () {
   //RESPONSIVE MENU BGCOLOR
   $(".navbar-header button").on("click", function (e) {
     $("#bs-example-navbar-collapse-1").css({
-      "background-color": "#04091D",
+      "background-color": "#000000",
     });
     $("#bs-example-navbar-collapse-1 li a").css({
       color: "#ffffff",
