@@ -1576,6 +1576,8 @@ pre code {
   overflow-y: scroll;
 }
 .container {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;

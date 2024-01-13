@@ -2022,8 +2022,13 @@ label {
 }
 
 .cs-shape_wrap_6 > .container {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
   position: relative;
   z-index: 3;
+}
+.container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 .cs-shape_wrap_6 .cs-shape_2 > div {

@@ -75,7 +75,91 @@
     </div>
   </header>
   <!-- End Header Section -->
+  <style>
+    .p1 {
+      text-align: justify;
+    }
 
+    .cs-section_heading {
+      margin-top: -8px;
+    }
+
+    .ul1 {
+      counter-reset: index;
+      padding: 0;
+      max-width: 100%;
+    }
+
+    /* List element */
+    .li1 {
+      counter-increment: index;
+      display: flex;
+      align-items: center;
+      padding: 12px 0;
+      box-sizing: border-box;
+      text-align: left;
+    }
+
+
+    /* Element counter */
+    .li1::before {
+      content: counters(index, ".", decimal-leading-zero);
+      font-size: 1.5rem;
+      text-align: right;
+      font-weight: bold;
+      min-width: 50px;
+      padding-right: 12px;
+      font-variant-numeric: tabular-nums;
+      align-self: flex-start;
+      background-image: linear-gradient(to bottom, aquamarine, orangered);
+      background-attachment: fixed;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+
+    /* Element separation */
+    .li1+.li1 {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* Set the section dimensions */
+    .section2 {
+      position: relative;
+      width: 100%;
+      height: 33vh;
+
+      overflow: hidden;
+      background: #000;
+      z-index: 1;
+    }
+
+    /* Set the background image and fixed attachment */
+    .section2::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('assets/img/bg1.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      opacity: 0.6;
+      z-index: -1;
+    }
+
+    /* Style the text inside the section */
+    .section2 .text {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: #d5b15d;
+      font-size: 24px;
+      margin-top: 62px;
+    }
+  </style>
   <!-- Start Hero -->
   <div class="cs-page_heading cs-style1 cs-center text-center cs-bg" data-src="assets2/img/about_hero_bg.jpeg">
     <div class="container">
@@ -95,24 +179,53 @@
   <section>
     <div class="container">
       <div class="row">
-        <div class="col-xl-5 col-lg-7">
+        <div class="col-xl-6 col-lg-10">
           <div class="cs-section_heading cs-style1">
             <h3 class="cs-section_subtitle">About Our Airline </h3>
-            <h2 class="cs-section_title">We provide the best
-              possible trainings. </h2>
-            <div class="cs-height_30 cs-height_lg_20"></div>
-            <p class="cs-m0">We provide the best possible training with reputed faculties to ensure success. Our
-              ultimate goal is to develop a student's personality so that they can eventually reach their zenith. Once
-              you join us it’s only a matter of time before you uncover your true potential.</p>
-            <div class="cs-height_30 cs-height_lg_30"></div>
+            <h2 class="cs-section_title">From Chairman’s Desk </h2><br>
             <div class="cs-separator cs-accent_bg"></div>
             <div class="cs-height_25 cs-height_lg_40"></div>
+            <h6 class="cs-m0">Dear Students and Parents.</h6><br>
+
+            <p class="p1">As the Director of INDO COCKPIT Aviation Academy, I am thrilled to see so
+              many aspiring
+              individuals seeking a career in the dynamic and exciting fields of aviation. In today's job market,
+              people are wisely opting for trendy and advanced courses, such as Aviation and Hospitality
+              Management, that prepare them for the future and offer guaranteed job prospects.</p>
+
           </div>
         </div>
-        <div class="col-lg-5 offset-xl-2">
-          <img src="assets2/images/img3.png" alt="" class="w-100 cs-radius_15">
+        <div class="col-lg-4 offset-xl-2">
+          <img src="assets2/images/img3.png" alt="" class=" cs-radius_15">
           <div class="cs-height_25 cs-height_lg_25"></div>
         </div>
+        <p class="p1">In INDO COCKPIT Aviation Academy, we are committed to providing our students with a
+          comprehensive education that will help them reach their full potential. Experienced faculty and a
+          rigorous curriculum are designed to give our students the tools they need to succeed.</p>
+
+        <p class="p1">
+          I would like to extend my sincerest appreciation to all of our students who have chosen INDO
+          COCKPIT Aviation Academy the place to start their Aviation and Hospitality careers. I am
+          confident that you will find our institution to be a supportive and challenging environment that
+          will help you achieve your goals. </p>
+        <p class="p1">I would also like to extend my special gratitude towards our faculty and colleagues for their
+          dedicated efforts towards the growth and success of our Academy. Their consistent engagement
+          and support have had a significant impact on our students' learning experiences. In addition, I
+          would like to express my heartfelt gratitude to our valued parents for their support and
+          involvement in our academy community. Their contributions have been crucial to our success. </p>
+        <p class="p1">Finally, I extend my gratitude to the Almighty for granting the wisdom and guidance to our
+          faculty to impart valuable moral principles to our students. With the support of our dedicated
+          faculty, inspired students, and engaged parents, we are confident that here at INDO COCKPIT
+          Aviation Academy dreams truly do take wings.</p>
+
+        <p>Thank you, </p>
+        <h4><span style="color: #d5b15d">JISHA ANEESH</span>
+          <br><span class="h6">Managing Director
+          </span>
+        </h4>
+
+        <p class="mt-0"> </p>
+
         <div class="col-lg-7">
           <img src="assets2/images/img4.png" alt="" class="w-100 cs-radius_15">
           <div class="cs-height_25 cs-height_lg_25"></div>
@@ -124,9 +237,305 @@
       </div>
     </div>
   </section>
+
+  <section class="mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-5 col-lg-10">
+          <div class="cs-section_heading cs-style1">
+            <!-- <h3 class="cs-section_subtitle">About Our Airline </h3> -->
+            <h2 class="cs-section_title">A Message from Center Head </h2><br>
+            <div class="cs-separator cs-accent_bg"></div>
+            <div class="cs-height_25 cs-height_lg_40"></div>
+            <h6 class="cs-m0">Dear Aviation Enthusiasts,</h6><br>
+
+            <p class="p1">Welcome to Indo Cockpit Aviation Academy!<br>
+              I am delighted to extend a warm welcome to you on behalf of Indo Cockpit Aviation Academy, where we take
+              pride in shaping the future of aviation professionals.
+
+              As the Center Head, I am excited to share our commitment to providing world-class aviation education and
+              training.
+
+              At Indo Cockpit Aviation Academy, we understand the dynamic and challenging nature of the aviation
+              industry, and we are dedicated to preparing our students with the knowledge, skills, and mindset required
+              to excel in this ever-evolving field.</p>
+
+          </div>
+        </div>
+        <div class="col-lg-5 offset-xl-2">
+          <img src="assets2/images/img3.png" alt="" class=" cs-radius_15">
+          <div class="cs-height_25 cs-height_lg_25"></div>
+        </div>
+        <div class="row about-row">
+
+          <div class="m3 mt-4 about-div col-lg-12">
+            <h5>Key Features of Indo Cockpit Aviation Academy:
+            </h5>
+            <ul class="ul1">
+              <li class="li1">Experienced Faculty: Our team of experienced and knowledgeable instructors bring a wealth
+                of real-world aviation experience to the classroom, ensuring that our students receive the best guidance
+                and mentorship. </li>
+
+              <li class="li1">State-of-the-Art Facilities: Indo Cockpit Aviation Academy is equipped with cutting-edge
+                facilities, including modern simulators, classrooms, and aviation resources, to provide a conducive
+                learning environment.
+              </li>
+
+              <li class="li1">Comprehensive Training Programs: We offer a range of comprehensive training programs,
+                covering various aspects of aviation, from cabin crew training to ground operations. Our curriculum is
+                designed to meet international standards and industry requirements. </li>
+              <li class="li1">Industry Connections: Indo Cockpit Aviation Academy maintains strong connections with
+                leading aviation organizations, airlines, and industry experts. This allows our students to benefit from
+                networking opportunities and stay updated on industry trends.</li>
+              <li class="li1">Focus on Safety: Safety is our top priority. Our training programs incorporate the highest
+                safety standards, ensuring that our graduates are well-prepared to prioritize safety in their aviation
+                careers.</li>
+            </ul>
+          </div>
+          <br>
+
+        </div>
+
+        <p>Whether you aspire to become a skilled Cabin crew or pursue a career in aviation management, we invite you to
+          explore the exciting opportunities that Indo Cockpit Aviation Academy has to offer.</p>
+
+        <p>Thank you for considering us as your partner in achieving your aviation dreams.</p>
+        <p>Feel free to reach out if you have any questions or if you would like more information about our academy.
+          Fly high with the Indo Cockpit Aviation Academy!</p>
+        <p>Best regards, </p>
+        <h4><span style="color: #d5b15d">Vaisakhan A S</span>
+          <br><span class="h6">Center Head
+          </span>
+        </h4>
+        <p class="mt-0"> </p>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <div class="container">
+    <center>
+
+      <h2 class="mb-5" style="color: #d5b15d">Our Team
+      </h2>
+    </center>
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <div class="cs-team cs-style1">
+          <div class="cs-member_thumb">
+            <img src="assets2/img/member_4.jpeg" alt="Member">
+            <div class="cs-member_overlay"></div>
+          </div>
+          <div class="cs-member_info">
+            <h2 class="cs-member_name">Team Name</h2>
+            <div class="cs-member_designation">Something</div>
+          </div>
+
+        </div>
+        <div class="cs-height_80 cs-height_lg_30"></div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="cs-team cs-style1">
+          <div class="cs-member_thumb">
+            <img src="assets2/img/member_4.jpeg" alt="Member">
+            <div class="cs-member_overlay"></div>
+          </div>
+          <div class="cs-member_info">
+            <h2 class="cs-member_name">Team Name</h2>
+            <div class="cs-member_designation">Something</div>
+          </div>
+
+        </div>
+        <div class="cs-height_80 cs-height_lg_30"></div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="cs-team cs-style1">
+          <div class="cs-member_thumb">
+            <img src="assets2/img/member_4.jpeg" alt="Member">
+            <div class="cs-member_overlay"></div>
+          </div>
+          <div class="cs-member_info">
+            <h2 class="cs-member_name">Team Name</h2>
+            <div class="cs-member_designation">Something</div>
+          </div>
+
+        </div>
+        <div class="cs-height_80 cs-height_lg_30"></div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="cs-team cs-style1">
+          <div class="cs-member_thumb">
+            <img src="assets2/img/member_4.jpeg" alt="Member">
+            <div class="cs-member_overlay"></div>
+          </div>
+          <div class="cs-member_info">
+            <h2 class="cs-member_name">Team Name</h2>
+            <div class="cs-member_designation">Something</div>
+          </div>
+
+        </div>
+        <div class="cs-height_80 cs-height_lg_30"></div>
+      </div>
+
+
+    </div>
+    <p class="mb-5">We provide the best possible training with reputed faculties to ensure success. Our ultimate goal
+      is to develop a student’s personality so that they can eventually reach their zenith. Once you join
+      us, it’s only a matter of time before you uncover your true potential. </p>
+  </div>
+
+
+  <style>
+    /* Set the section dimensions */
+    .section2 {
+      position: relative;
+      width: 100%;
+      height: 68vh;
+      overflow: hidden;
+      background: #000;
+      z-index: 1;
+    }
+
+    /* Set the background image and fixed attachment */
+    .section2::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('assets/img/bg1.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      opacity: 0.6;
+      z-index: -1;
+    }
+
+    /* Style the text inside the section */
+    .section2 .text {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      color: #fff;
+      font-size: 24px;
+      margin-top: 9dvh;
+    }
+
+    .p12 {
+      text-align: justify;
+      padding: 163px;
+      line-height: 30px;
+      font-size: medium;
+      margin-top: -199px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .p12 {
+        text-align: center;
+        padding: 40px;
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: -88px;
+      }
+
+      .section2 .text {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        color: #fff;
+        font-size: 24px;
+        margin-top: 9vh;
+      }
+
+      .section2 {
+        position: relative;
+        width: 100%;
+        height: 87vh;
+        overflow: hidden;
+        background: #000;
+        z-index: 1;
+      }
+    }
+
+    .cs-image_layer.cs-style1 {
+      padding-right: -15px;
+      padding-bottom: 60px;
+    }
+  </style>
+
+  <section class="section2">
+    <div class="text">
+      <div class="heading-div mb-5">
+        <div class="section-title section-heading">
+
+          <h2 style="background: linear-gradient(to right, #bb913d 0%, #ffec5d 100%);
+							-webkit-background-clip: text;
+							-webkit-text-fill-color: transparent;">Our Placement
+          </h2>
+
+        </div>
+      </div>
+      <p class="p12">"INDO COCKPIT AVIATION ACADEMY, one of the best AVAITION training institutes in Calicut,
+        believes in delivering "Quality service" in the students training throughout the course. This is the sole
+        reason behind our highest placement track, in spite of having limited seats for admission Indo cockpit
+        aviation academy organizes training for the development of the students of the region. Each year our
+        students are successfully placed in reputed Airline companies; it gives us immense delight."
+        We provide the best possible training with reputed faculties to ensure success. Our ultimate goal is to
+        develop a student’s personality so that they can eventually reach their zenith. Once you join us, it’s
+        only a matter of time before you uncover your true potential. </p>
+    </div>
+  </section>
+
+
+  <section class="mt-5">
+    <div class="container ">
+      <div class="row">
+        <div class="col-xl-5 col-lg-6">
+          <div class="cs-image_layer cs-style1 mt-5">
+            <div class="cs-image_layer_in">
+              <img src="assets2/images/img7.png" alt="Image" class="w-100 cs-radius_15">
+            </div>
+          </div>
+          <div class="cs-height_0 cs-height_lg_40"></div>
+        </div>
+        <div class="col-xl-5 offset-xl-1 col-lg-6 mt-5">
+          <div class="cs-section_heading cs-style1">
+            <h3 class="cs-section_subtitle">Our Programs</h3>
+            <h2 class="cs-section_title">We Provide
+            </h2>
+            <div class="cs-height_30 cs-height_lg_20"></div>
+            <p class="cs-m0">ndo Cockpit Aviation Academy provides a transformational experience. We present a world-
+              class learning environment for students and an opportunity to explore new levels of learning. Our
+              academy presents diploma and degree programs in Airline and Airport management. We train
+              and prepare professionals and unique talents for Airline and Airport industries. Our training is
+              designed to make every student capable and trained in their chosen careers. We deliver high-
+              quality and intense training to our students to prepare them for their chosen careers. Facilities are
+              offered to students to partake in various extracurricular activities, training programs, seminars,
+              debates, and GD competitions.
+              Experienced and dedicated faculty are the backbone of the Cockpit Aviation Academy. We are blessed to have
+              a team of highly skilled, experienced, and educated professionals, trainers,
+              personality groomers, and management experts. Our faculty is ready to transform every student,
+              and they provide personalized attention to every student to bring out the best in them. </p>
+            <br>
+
+
+
+          </div>
+        </div>
+      </div>
+      <br><br>
+
+    </div>
+  </section>
+
+
+
   <div class="cs-height_75 cs-height_lg_55"></div>
   <!-- Start FunFact -->
-
+  <hr>
   <!-- End CTA -->
   <!-- Start Footer -->
   <footer class="cs-fooer" style="background-color: black;">
