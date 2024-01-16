@@ -253,7 +253,7 @@
 
 
 	<div class="header-video">
-		<video class="background-video" loop muted autoplay playsinline style="filter: brightness(0.3);">
+		<video class="background-video" loop muted autoplay playsinline style="filter: brightness(0.9);">
 			<source src="video2.mp4" type="video/mp4">
 			Your browser does not support the video tag.
 		</video>
@@ -275,7 +275,7 @@
 	<!--================================= HEADER ENDS ============================================-->
 	<!--=================================  ABOUT ME START ==========================================-->
 
-	<video class="video-bg" src="assets/videos/file.mp4" muted autoplay loop playsinline></video>
+	<video class="video-bg" src="vidoe3.mp4" muted autoplay loop playsinline></video>
 
 	<section class="section1">
 		<div class="column1 image1">
@@ -292,7 +292,7 @@
 							-webkit-background-clip: text;
 							-webkit-text-fill-color: transparent;">About</h4> -->
 							<h2 class="cs-section_title" style="text-align: center; color:#d5b15d;letter-spacing: 4px;
-							"><b>WHY AVIATION?</b> </h2>
+							"><b>WHO ARE WE?</b> </h2>
 							<p>
 								The civil aviation industry is one of the fastest-growing industries in the world. There
 								are vast
@@ -324,10 +324,44 @@
 
 
 	<style>
+		.section4 {
+			position: relative;
+			width: 100%;
+			height: 104vh;
+			overflow: hidden;
+			background: #000;
+			z-index: 1;
+		}
 
+		@media only screen and (max-width: 600px) {
+			.section4 {
+				position: relative;
+				width: 100%;
+				height: 189vh;
+				overflow: hidden;
+				background: #000;
+				z-index: 1;
+			}
+		}
+
+
+		.section4::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url('assets/img/bg1.png');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			opacity: 0.6;
+			z-index: -1;
+		}
 	</style>
 
-	<section class="section-padding about-section section-1-bg" id="about" style="background-color:#000000;">
+	<section class="section4">
 
 
 
@@ -344,20 +378,24 @@
 
 
 			<div class="cs-height_90 cs-height_lg_45"></div>
-			<div class="row">
+			<div class="row" style="    margin-top: 72px;
+			">
 				<div class="col-lg-6">
 					<div class="card3">
 						<center>
 							<img src="assets/img/mission.png" width="35%">
 						</center>
-						<div class="main-content">
-							<p class="heading">MISSION</p>
-						</div>
-						<div class="footer mb-3">Our mission is to provide high-quality education, high-standard
-							learning facilities, and comprehensive
-							training in Airline and airport operations. Our objective is to draw out the talents of
-							students with the
-							proper training and guide them to become successful professionals in a competitive world.
+						<div class="card2">
+							<div class="main-content">
+								<p class="heading">MISSION</p>
+							</div>
+							<div class="footer mb-3">Our mission is to provide high-quality education, high-standard
+								learning facilities, and comprehensive
+								training in Airline and airport operations. Our objective is to draw out the talents of
+								students with the
+								proper training and guide them to become successful professionals in a competitive
+								world.
+							</div>
 						</div>
 					</div>
 
@@ -412,10 +450,10 @@
 					<img src="assets/img/about1.png" alt="540x400" width="80%" class="img-responsive" />
 				</div>
 				<div class="m1 about-div col-sm-6">
-					<h4 style="background: linear-gradient(to right, #bb913d 0%, #ffec5d 100%);
+					<!-- <h4>ABOUT OUR AIRLINE</h4> -->
+					<h2 style="background: linear-gradient(to right, #bb913d 0%, #ffec5d 100%);
 					-webkit-background-clip: text;
-					-webkit-text-fill-color: transparent;">ABOUT OUR AIRLINE</h4>
-					<h2><b>WE PROVIDE THE BEST POSSIBLE TRAININGS.
+					-webkit-text-fill-color: transparent;"><b>WE PROVIDE THE BEST POSSIBLE TRAININGS.
 						</b></h2>
 					<p>
 						We provide the best possible training with reputed faculties to ensure success. Our

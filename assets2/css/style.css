@@ -2276,9 +2276,9 @@ label {
 
 .cs-rotate_img {
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+  /* transform: rotate(45deg);
   overflow: hidden;
-  border-radius: 7px;
+  border-radius: 7px; */
 }
 
 .cs-rotate_img_in {
