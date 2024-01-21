@@ -300,7 +300,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 498px;
+  right: 0;
+  width: 163%;
   height: 878px;
   z-index: -1;
 }
@@ -625,7 +626,7 @@ body {
 }
 
 .m1 {
-  margin-top: 50px;
+  margin-top: 22px;
   margin-left: -43px;
 }
 
