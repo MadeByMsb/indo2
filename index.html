@@ -29,6 +29,7 @@
 	<!-- CUSTOM CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/custom/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom/custom.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<link rel="stylesheet" href="assets2/css/plugins/animate.css">
 
@@ -722,11 +723,266 @@
 
 		</div>
 	</section>
+	<style>
+		.testimonial {
+			position: relative;
+			max-width: 100%;
+			width: 100%;
+			padding: 50px 0;
+			overflow: hidden;
+			border-radius: 30px;
+
+		}
+
+		.testimonial {
+			background-image: url('assets/img/bg3.jpg');
+		}
+
+		.testimonial .image {
+			height: auto;
+			width: 60px;
+			object-fit: cover;
+		}
+
+		.testimonial .slide {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			row-gap: 30px;
+			height: 100%;
+			width: 100%;
+		}
+
+		.slide p {
+			text-align: center;
+			padding: 0 160px;
+			font-size: 14px;
+			font-weight: 400;
+			color: #ffffff;
+		}
+
+		.slide .quote-icon {
+			font-size: 30px;
+			color: #4070f4;
+		}
+
+		.slide .details {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.details .name {
+			font-size: 14px;
+			font-weight: 600;
+			color: #ffffff;
+		}
+
+		.details .job {
+			font-size: 12px;
+			font-weight: 400;
+			color: #e1e1e1;
+		}
+
+		/* swiper button css */
+		.nav-btn {
+			height: 40px;
+			width: 40px;
+			border-radius: 50%;
+			transform: translateY(30px);
+			background-color: rgba(0, 0, 0, 0.1);
+			transition: 0.2s;
+		}
+
+		.nav-btn:hover {
+			background-color: rgba(0, 0, 0, 0.2);
+		}
+
+		.nav-btn::after,
+		.nav-btn::before {
+			font-size: 20px;
+			color: #fff;
+		}
+
+		.swiper-pagination-bullet {
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		.swiper-pagination-bullet-active {
+			background-color: #4070f4;
+		}
+
+		@media screen and (max-width: 768px) {
+			.slide p {
+				padding: 0 20px;
+			}
+
+			.nav-btn {
+				display: none;
+			}
+		}
+	</style>
+	<section class=" services-section section-2-bg" id="">
+
+		<div class="container">
+			<div class="testimonial mySwiper">
+				<div class="testi-content swiper-wrapper">
+					<div class="slide swiper-slide">
+						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
+						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
+
+						<p>
+							Iam really glad to be a part of the Cockpit Aviation Academy. They gave us excellent
+							classes, and the institute has the best faculties who are very experienced and
+							knowledgeable. The staff and the management are very friendly and supportive, and they
+							support us to improve our personalities and skills. I highly recommend Cockpit Aviation
+							Academy if you are passionate about aviation and plan to pursue it as a career.
+
+						</p>
+						<i class="bx bxs-quote-alt-left quote-icon"></i>
+						<div class="details">
+							<span class="name">Abhijith Abhi</span>
+						</div>
+					</div>
+					<div class="slide swiper-slide">
+						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
+						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
+
+						<p>
+							Cockpit Academy was a home away from home for me, with such friendly and supportive
+							management and staff. They provide the best faculties. If you have the passion and desire to
+							become cabin crew or ground staff, the cockpit has got your back. I highly recommend this
+							institute to those who are truly passionate about the aviation industry.
+						</p>
+						<i class="bx bxs-quote-alt-left quote-icon"></i>
+						<div class="details">
+							<span class="name">sana sanuzz</span>
+						</div>
+					</div>
 
 
-	<section class="section-padding services-section section-2-bg" id="services" style="padding-top: 30px;
+					<div class="slide swiper-slide">
+						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
+						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
+
+						<p>
+							Best aviation academy i have ever seen and i have an excellent academic experience. Good
+							facuilty, excellent teaching and good education enviornment. They gives me their full
+							support. I would highly recommend for anyone who interested to study aviation courses.😊
+
+						</p>
+						<i class="bx bxs-quote-alt-left quote-icon"></i>
+						<div class="details">
+							<span class="name">Subeesh Subi</span>
+						</div>
+					</div>
+
+
+					<div class="slide swiper-slide">
+						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
+						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
+
+						<p>
+							One of the best aviation institute in calicut.with good atmosphere and they provide
+							excellent classes and best facuilties. The management and staffs are very friendly and
+							supportive. I highly recommend this institute to all students who dreams good career in
+							aviation.
+
+						</p>
+						<i class="bx bxs-quote-alt-left quote-icon"></i>
+						<div class="details">
+							<span class="name">Ramshad Sh</span>
+						</div>
+					</div>
+
+
+					<div class="slide swiper-slide">
+						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
+						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
+
+						<p>
+							Cockpit aviation academy is one of the best aviation institute in calicut. They provide
+							excellent classes and the best facuilties for their students. And also the staffs and
+							management are very supportive snd caring. I highly recomend this institute to all
+							youngsters who dreams good career
+							in aviation.
+							management wwas veey suportive and caring. I highly recommend those dreams good career
+						</p>
+						<i class="bx bxs-quote-alt-left quote-icon"></i>
+						<div class="details">
+							<span class="name">Nayana Chandran C</span>
+						</div>
+					</div>
+
+
+					<div class="slide swiper-slide">
+						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
+						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
+
+						<p>
+							Best aviation academy i have ever seen bescause they are very supportive in all activities
+							and in my opinion this academy is something else ✨ cockpit Aviation has been giving great
+							opportunity for students who love to study aviation. They offer courses in Bba aviation&
+							Diploma aviation. It is surely the best institution.
+							The teachers are very friendly and helpful. I would surely recommend this academy for anyone
+							who wishes to pursue a career in aviation industry.
+
+						</p>
+						<i class="bx bxs-quote-alt-left quote-icon"></i>
+						<div class="details">
+							<span class="name">Hanna Dhils</span>
+						</div>
+					</div>
+
+
+					<div class="slide swiper-slide">
+						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
+						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
+
+						<p>
+							One of the best aviation institute in calicut.. Worth of money. I have Good experience with
+							cockpit aviation academy . I wish all the very best in coming years..
+							I suggest all my friends and relatives with out any doubt. Good infra.. Good training.. Good
+							hospitality.. The management and entire team were supportive and helphul... One of the best
+							Airport management training center in calicut.
+							Thank you cockpit .
+						</p>
+						<i class="bx bxs-quote-alt-left quote-icon"></i>
+						<div class="details">
+							<span class="name">Sangeeth P</span>
+						</div>
+					</div>
+
+					<div class="slide swiper-slide">
+						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
+						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
+
+						<p>
+							It's a good institution for aviation studies. Faculties are very friendly and well
+							experienced. They provide 100% placement assistance. Similarly, that too in the first
+							interview itself. I was able to attend the interview and got the job due to the support of
+							the faculties there.
+							Thank you 😊
+						</p>
+						<i class="bx bxs-quote-alt-left quote-icon"></i>
+						<div class="details">
+							<span class="name">Ania Shahinkichu</span>
+						</div>
+					</div>
+
+				</div>
+				<div class="swiper-button-next nav-btn"></div>
+				<div class="swiper-button-prev nav-btn"></div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-padding services-section section-2-bg mt-5" id="services" style="padding-top: 30px;
 	">
 		<div class="container">
+			<br><br>
 			<div class="heading-div">
 				<div class="section-title section-heading">
 
@@ -1239,14 +1495,18 @@
 							<h2 class="cs-widget_title"><b>Any Queries? </b></h2>
 							<div class="cs-newsletter cs-style1">
 								<div class="card4 p-3">
-									<form action="#" class="cs-newsletter_form">
-										<input type="text" class="cs-newsletter_input" placeholder="Your Name"><br>
-										<input type="number" class="cs-newsletter_input mb-5"
+									<form id="submit-form" action="" class="cs-newsletter_form">
+										<input type="text" id="name" name="name" class="cs-newsletter_input"
+											placeholder="Your Name"><br>
+										<input type="number" id="number" name="number" class="cs-newsletter_input mb-5"
 											placeholder="Your Mobile Number">
-										<input type="email" class="cs-newsletter_input " placeholder="Your Email">
-										<textarea class="cs-newsletter_input" placeholder="Message"></textarea>
+										<input type="email" name="email" id="email" class="cs-newsletter_input "
+											placeholder="Your Email">
+										<textarea class="cs-newsletter_input" placeholder="Message" id="msg"
+											name="message"></textarea>
 										<br>
-										<button class="btn btn-secondary w-100"><span>Send</span></button>
+										<button class="btn btn-secondary w-100" type="submit"
+											value="Submit"><span>Send</span></button>
 									</form>
 								</div>
 							</div>
@@ -1295,6 +1555,23 @@
 			z-index: 12000;
 		}
 	</style>
+
+
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			slidesPerView: 1,
+			grabCursor: true,
+			loop: true,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
+	</script>
 
 
 	<div class="cursor cursor--small"></div>
@@ -1544,6 +1821,29 @@
 
 	</script>
 
+
+	<!-- 444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444 -->
+	<script>
+		$("#submit-form").submit((e) => {
+			e.preventDefault()
+			$.ajax({
+				url: "https://script.google.com/macros/s/AKfycbx3l0DWJNXUdjv8coL8cNjlAxqEqz4-vAiOv_25_0O2Wl7gOb25JmVLoUwirv7q25s0tg/exec",
+				data: $("#submit-form").serialize(),
+				method: "post",
+				success: function (response) {
+					alert("Form submitted successfully")
+					window.location.reload()
+					//window.location.href="https://google.com"
+				},
+				error: function (err) {
+					alert("Something Error")
+
+				}
+			})
+		})
+	</script>
+
+
 	<script>
 		var swiper = new Swiper(".mySwiper", {
 			slidesPerView: 1,
@@ -1556,6 +1856,38 @@
 				clickable: true,
 			},
 		});
+	</script>
+	<script>
+		let currentIndex = 0;
+		const testimonials = document.querySelector('.testimonials');
+		const testimonialItems = document.querySelectorAll('.testimonial');
+		const totalTestimonials = testimonialItems.length;
+
+		function showTestimonial(index) {
+			if (index < 0) {
+				currentIndex = totalTestimonials - 1;
+			} else if (index >= totalTestimonials) {
+				currentIndex = 0;
+			} else {
+				currentIndex = index;
+			}
+
+			const translation = -currentIndex * 100 + '%';
+			testimonials.style.transform = `translateX(${translation})`;
+		}
+
+		function prevTestimonial() {
+			showTestimonial(currentIndex - 1);
+		}
+
+		function nextTestimonial() {
+			showTestimonial(currentIndex + 1);
+		}
+
+		// Auto-slide testimonials every 3 seconds
+		setInterval(() => {
+			nextTestimonial();
+		}, 3000);
 	</script>
 </body>
 

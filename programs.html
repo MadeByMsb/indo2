@@ -25,6 +25,120 @@
         display: inline-block;
         vertical-align: middle;
     }
+
+    @media screen and (max-width: 1380px) {
+        .cs-page_heading.cs-style1 {
+            height: 410px;
+        }
+    }
+</style>
+<style>
+    .cs-funfact_shape {
+        background-color: #7B7D7C;
+        z-index: -1;
+    }
+
+
+    @media screen and (max-width: 1399px) {
+
+        .cs-funfact_wrap,
+        .cs-funfact_wrap_2 {
+            padding: 28px 50px;
+        }
+    }
+
+    /* Styling for the card container */
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    /* Styling for individual cards */
+
+    .card1 {
+        width: 100%;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        color: white;
+
+        box-sizing: border-box;
+        background-color: #f9f9f900;
+    }
+
+    .card {
+        width: 30%;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        color: white;
+        box-sizing: border-box;
+        background-color: #f9f9f900;
+    }
+
+    .card:hover {
+        background-color: white;
+        color: black;
+    }
+
+    /* Media query for responsive design */
+    @media (max-width: 768px) {
+        .card {
+            width: 45%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .card {
+            width: 100%;
+        }
+    }
+
+    .cs-section_heading {
+        margin-top: -8px;
+    }
+
+    .ul1 {
+        counter-reset: index;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    /* List element */
+    .li1 {
+        counter-increment: index;
+        display: flex;
+        align-items: center;
+        padding: 12px 0;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+
+    /* Element counter */
+    .li1::before {
+        content: counters(index, ".", decimal-leading-zero);
+        font-size: 1.5rem;
+        text-align: right;
+        font-weight: bold;
+        min-width: 50px;
+        padding-right: 12px;
+        font-variant-numeric: tabular-nums;
+        align-self: flex-start;
+        background-image: linear-gradient(to bottom, aquamarine, orangered);
+        background-attachment: fixed;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+    /* Element separation */
+    .li1+.li1 {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
 </style>
 
 <body>
@@ -101,348 +215,41 @@
         </div>
     </div>
     <!-- End Hero -->
-    <div class="cs-height_150 cs-height_lg_80"></div>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-5 col-lg-7">
-                    <div class="cs-section_heading cs-style1">
-                        <h3 class="cs-section_subtitle">Our Programs</h3>
-                        <h2 class="cs-section_title">Cabin Crew </h2>
-                        <div class="cs-height_30 cs-height_lg_20"></div>
-                        <p class="cs-m0">As a cabin crew member you’ll provide excellent customer care to
-                            passenger<br><br>
-
-                            The applicants, who are looking forward to pursuing the course of Cabin Crew must make sure
-                            that they fit in the specific eligibility criteria.The complete criterion of eligibility can
-                            be found below :
-                        </p>
-                        <div class="cs-height_30 cs-height_lg_30"></div>
-                        <div class="cs-separator cs-accent_bg"></div>
-                        <div class="cs-height_25 cs-height_lg_40"></div>
-                    </div>
-                </div>
-                <div class="col-lg-5 offset-xl-2">
-                    <img src="assets2/images/img6.png" alt="" class="w-100 cs-radius_15">
-                    <div class="cs-height_25 cs-height_lg_25"></div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <div class="cs-height_75 cs-height_lg_55"></div>
     <style>
-        .cs-funfact_shape {
-            background-color: #7B7D7C;
-            z-index: -1;
+        .s1 {
+            margin-top: -90px;
+
         }
 
+        @media screen and (max-width: 600px) {
+            .s1 {
+                margin-top: -44px;
 
-        @media screen and (max-width: 1399px) {
-
-            .cs-funfact_wrap,
-            .cs-funfact_wrap_2 {
-                padding: 28px 50px;
-            }
-        }
-
-        /* Styling for the card container */
-        .card-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-        }
-
-        /* Styling for individual cards */
-
-        .card1 {
-            width: 100%;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 20px;
-            color: white;
-
-            box-sizing: border-box;
-            background-color: #f9f9f900;
-        }
-
-        .card {
-            width: 30%;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 20px;
-            color: white;
-            box-sizing: border-box;
-            background-color: #f9f9f900;
-        }
-
-        .card:hover {
-            background-color: white;
-            color: black;
-        }
-
-        /* Media query for responsive design */
-        @media (max-width: 768px) {
-            .card {
-                width: 45%;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .card {
-                width: 100%;
             }
         }
     </style>
-    <!-- Start FunFact -->
-    <section>
-        <div class="container">
-            <div class="cs-funfact_wrap">
-                <div class="cs-funfact_shape" data-src=""></div>
-                <div class="">
-                    <div class="cs-funfact_heading">
-                        <p style="color: white;"><img src="assets2/images/i1.png" width="50px">To get admission into one
-                            of the top
-                            institutes, one should take INDO
-                            COCKPIT AVITION ACADEMY.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="cs-funfact_wrap">
-                <div class="cs-funfact_shape" data-src=""></div>
-                <div class="">
-                    <div class="cs-funfact_heading">
-                        <p style="color: white;"><img src="assets2/images/i1.png" width="50px">To get To pursue the
-                            Cabin
-                            Crew course, the candidates must have qualified his/ her 10+2 in any stream or 3 years
-                            engineering diploma from any recognized board/university.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="cs-funfact_wrap">
-                <div class="cs-funfact_shape" data-src=""></div>
-                <div class="">
-                    <div class="cs-funfact_heading">
-                        <p style="color: white;"><img src="assets2/images/i1.png" width="50px">Students who have
-                            an undergraduate degree also are eligible for the Cabin Crew course
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="cs-funfact_wrap">
-                <div class="cs-funfact_shape" data-src=""></div>
-                <div class="">
-                    <div class="cs-funfact_heading">
-                        <p style="color: white;"><img src="assets2/images/i1.png" width="50px">The age of the candidate
-                            for the Cabin Crew must be between 17 to 25 years at the time of admission.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="cs-funfact_wrap">
-                <div class="cs-funfact_shape" data-src=""></div>
-                <div class="">
-                    <div class="cs-funfact_heading">
-                        <p style="color: white;"><img src="assets2/images/i1.png" width="50px">The height must be 155 cm
-                            or above for Females and 170 cm or above for Males in proportion to weight.rs while ensuring
-                            their comfort and safety throughout the flight.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <br>
-        </div>
-    </section>
-    <!-- End FunFact -->
-    <br>
-    <!-- Start Why Choose -->
-    <section>
+    <div class="cs-height_150 cs-height_lg_80"></div>
+
+    <section class="s1">
         <div class="container">
             <div class="row">
-                <div class="col-xl-5 col-lg-6">
-                    <div class="cs-image_layer cs-style1">
-                        <div class="cs-image_layer_in">
-                            <img src="assets2/images/img7.png" alt="Image" class="w-100 cs-radius_15">
-                        </div>
-                    </div>
-                    <div class="cs-height_0 cs-height_lg_40"></div>
-                </div>
-                <div class="col-xl-5 offset-xl-1 col-lg-6">
-                    <div class="cs-section_heading cs-style1">
-                        <h3 class="cs-section_subtitle">Our Programs</h3>
-                        <h2 class="cs-section_title">Cabin Crew Subjects In Kerala
-                        </h2>
+                <div class="col-xl-12 col-lg-7">
+                    <div class="cs-section_heading cs-style1"><br>
+                        <h3 class="cs-section_subtitle text-center">Our Programs</h3>
+                        <h2 class="cs-section_title text-center">Cabin Crew </h2>
                         <div class="cs-height_30 cs-height_lg_20"></div>
-                        <p class="cs-m0">There are various subjects in the field of Cabin Crew. Furthermore, the list of
-                            subjects is given below : </p>
-                        <br>
+                        <p class="cs-m0 " style="text-align: center;">As a cabin crew member you’ll provide excellent
+                            customer care to
+                            passenger
 
-
+                            The applicants, who are looking forward to pursuing the course of Cabin Crew must make sure
+                            that they fit in the specific eligibility criteria.
+                        </p>
 
                     </div>
                 </div>
             </div>
             <br><br>
-            <!-- <div class="card-container">
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>Aircraft</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>Familiarization</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>Food and catering Services
-                        </span>
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>Flight</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>Evaluation</span>
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>First Aid</span>
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>Inter-Department Coordination</span>
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>Emergency</span>
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>Situation Handling</span>
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>Airport</span>
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>Familiarization</span>
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>Skills</span>
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>Technical</span>
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>Training (Basic Aircraft Functions, Safety Procedures, etc.)
-                        </span>
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>In-flight</span>
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>Procedures</span>
-                    </div>
-
-                </div>
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>Personality</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>Development</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>Passenger</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>Handling</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="icon-text-container">
-                        <img src="assets2/images/c1.png" width="25px">
-                        <span>Presentation</span>
-                    </div>
-                </div>
-
-            </div> -->
-        </div>
-    </section>
-
-    <br>
-
-    <section>
-        <div class="container">
-
             <div class="row">
 
                 <div class="col-lg-7">
@@ -450,12 +257,22 @@
                     <div class="cs-height_25 cs-height_lg_25"></div>
                 </div>
                 <div class="col-lg-5">
-                    <img src="assets2/images/img5.png" alt="" class="w-100 cs-radius_15">
+                    <img src="assets2/images/img6.png" alt="" class="w-100 cs-radius_15">
                     <div class="cs-height_25 cs-height_lg_25"></div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <div class="cs-height_75 cs-height_lg_55"></div>
 
 
+
+
+
+
+    <section>
+        <div class="container">
 
             <div class="row">
                 <div class="col-xl-12 col-lg-7">
@@ -463,13 +280,15 @@
                         <h3 class="cs-section_subtitle text-center">Our Programs</h3>
                         <h2 class="cs-section_title text-center">Airport Ground Operations </h2>
                         <div class="cs-height_30 cs-height_lg_20"></div>
-                        <p class="cs-m0 ">Ensure the safety and comfort of all passengers who travel through
+                        <p class="cs-m0 " style="text-align: center;">Ensure the safety and comfort of all passengers
+                            who
+                            travel through
                             the airport.
                             Assisting passengers by answering questions, providing directions, or attending to their
                             other needs. This 12 month course by INDO COCKPIT gives students the added impetus they need
                             to excel in a career as a ground service staff for major domestic and international
                             airlines.
-                            <br>
+
                             Airport Ground staff are the first people who take care of their passengers in the initial
                             stage. They must ensure the passenger's safety and comfort by issuing tickets and taking
                             care of their luggage at the Airport till entering into Flight. The main duties of Ground
@@ -550,38 +369,76 @@
     </section>
     <br><br><br>
 
+
+
+
     <section>
         <div class="container">
-            <div class="row">
-                <div class="col-xl-5 col-lg-6">
-                    <div class="cs-image_layer cs-style1">
-                        <div class="cs-image_layer_in">
-                            <img src="assets2/images/img3.png" alt="Image" class="w-100 cs-radius_15">
-                        </div>
-                    </div>
-                    <div class="cs-height_0 cs-height_lg_40"></div>
-                </div>
-                <div class="col-xl-5 offset-xl-1 col-lg-6">
-                    <div class="cs-section_heading cs-style1">
-                        <h3 class="cs-section_subtitle">Our Programs</h3>
-                        <h2 class="cs-section_title">BBA Aviation
 
-                        </h2>
+            <div class="row">
+                <div class="col-xl-12 col-lg-7">
+                    <div class="cs-section_heading cs-style1">
+                        <h3 class="cs-section_subtitle text-center">Our Programs</h3>
+                        <h2 class="cs-section_title text-center">BBA Aviation </h2>
                         <div class="cs-height_30 cs-height_lg_20"></div>
-                        <p class="cs-m0">BBA in Airlines and Airport Management is a 3 year undergraduate-level course
+                        <p class="cs-m0 " style="text-align: center;">BBA in Airlines and Airport Management is a 3 year
+                            undergraduate-level course
                             that gives an in-depth knowledge of air transport, financial accounting, airport operations,
                             passanger forcasting, airport planning, marketing, etc. The course also trains its students
                             on ways to handleteams and other managerial skills.
                         </p>
-                        <br>
-
-
 
                     </div>
+                </div>
+
+
+            </div>
+            <br><br>
+            <div class="row">
+
+                <div class="col-lg-7">
+                    <img src="assets2/images/img4.png" alt="" class="w-100 cs-radius_15">
+                    <div class="cs-height_25 cs-height_lg_25"></div>
+                </div>
+                <div class="col-lg-5">
+                    <img src="assets2/images/img3.png" alt="" class="w-100 cs-radius_15">
+                    <div class="cs-height_25 cs-height_lg_25"></div>
                 </div>
             </div>
         </div>
     </section>
+
+
+    <br>
+
+    <div class="container">
+        <div class="row about-row">
+
+            <div class="m3 mt-0 about-div col-lg-12">
+                <h2 class="cs-section_title text-center">How to get an admission </h2>
+                </h5>
+                <ul class="ul1">
+                    <li class="li1">To get admission into one
+                        of the top
+                        institutes, one should take INDO
+                        COCKPIT AVITION ACADEMY. </li>
+
+                    <li class="li1">To get To pursue the Cabin Crew course, the candidates must have qualified his/ her
+                        10+2 in any stream or 3 years engineering diploma from any recognized board/university.
+                    </li>
+
+                    <li class="li1">Students who have an undergraduate degree also are eligible for the Cabin Crew
+                        course </li>
+                    <li class="li1">The age of the candidate for the Cabin Crew must be between 17 to 25 years at the
+                        time of admission.</li>
+                    <li class="li1">The height must be 155 cm or above for Females and 170 cm or above for Males in
+                        proportion to weight.rs while ensuring their comfort and safety throughout the flight.</li>
+                </ul>
+            </div>
+            <br>
+
+        </div>
+    </div>
 
 
 
