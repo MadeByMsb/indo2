@@ -33,6 +33,8 @@
 
 	<link rel="stylesheet" href="assets2/css/plugins/animate.css">
 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
 
 </head>
@@ -166,6 +168,115 @@
 		.video-bg {
 			display: none;
 		}
+	}
+
+	/* Styles for the card */
+
+	.card {
+		width: 250px;
+		height: 274px;
+		margin: 10px;
+		padding: 20px;
+		background: rgba(0, 0, 0, 0);
+		padding: .4em;
+		border-radius: 6px;
+		transition: transform 0.3s;
+		display: inline-block;
+		border: 1px solid white;
+
+
+	}
+
+	.card-image {
+		background-color: rgba(236, 236, 236, 0);
+		width: 100%;
+		height: auto;
+		transition: transform 0.3s;
+
+		border-radius: 6px 6px 6px 6px;
+	}
+
+	.card-image:hover {
+		transform: scale(0.98);
+	}
+
+	.category {
+		text-transform: uppercase;
+		font-size: 0.9em;
+		font-weight: 600;
+		color: rgb(63, 121, 230);
+		text-align: center;
+		margin-bottom: -30px;
+	}
+
+	.category:hover {
+		cursor: pointer;
+	}
+
+	.heading {
+		font-weight: 600;
+		color: rgb(255, 255, 255);
+		padding: 7px;
+		text-align: center;
+		font-size: 20px;
+		margin-top: 5px;
+	}
+
+	.heading:hover {
+		cursor: pointer;
+	}
+
+	.author {
+		color: gray;
+		font-weight: 400;
+		font-size: 11px;
+		padding-top: 20px;
+	}
+
+	.name {
+		font-weight: 600;
+	}
+
+	.name:hover {
+		cursor: pointer;
+	}
+
+
+	/* Hover effect */
+	.card:hover {
+		transform: scale(1.05);
+		background-color: #000000;
+	}
+
+	/* Responsive layout */
+	@media (max-width: 767px) {
+		.card {
+			width: 45%;
+			margin: 10px;
+		}
+	}
+
+	.cursor {
+		position: fixed;
+		left: 0;
+		top: 0;
+		pointer-events: none;
+	}
+
+	.cursor--small {
+		width: 10px;
+		height: 10px;
+		left: -2.5px;
+		top: -2.5px;
+		border-radius: 50%;
+		z-index: 11000;
+		background: var(--color-text);
+	}
+
+	.cursor--canvas {
+		width: 100vw;
+		height: 100vh;
+		z-index: 12000;
 	}
 </style>
 
@@ -822,363 +933,7 @@
 				display: none;
 			}
 		}
-	</style>
-	<section class=" services-section section-2-bg" id="">
 
-		<div class="container">
-			<div class="testimonial mySwiper">
-				<div class="testi-content swiper-wrapper">
-					<div class="slide swiper-slide">
-						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
-						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
-
-						<p>
-							Iam really glad to be a part of the Cockpit Aviation Academy. They gave us excellent
-							classes, and the institute has the best faculties who are very experienced and
-							knowledgeable. The staff and the management are very friendly and supportive, and they
-							support us to improve our personalities and skills. I highly recommend Cockpit Aviation
-							Academy if you are passionate about aviation and plan to pursue it as a career.
-
-						</p>
-						<i class="bx bxs-quote-alt-left quote-icon"></i>
-						<div class="details">
-							<span class="name">Abhijith Abhi</span>
-						</div>
-					</div>
-					<div class="slide swiper-slide">
-						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
-						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
-
-						<p>
-							Cockpit Academy was a home away from home for me, with such friendly and supportive
-							management and staff. They provide the best faculties. If you have the passion and desire to
-							become cabin crew or ground staff, the cockpit has got your back. I highly recommend this
-							institute to those who are truly passionate about the aviation industry.
-						</p>
-						<i class="bx bxs-quote-alt-left quote-icon"></i>
-						<div class="details">
-							<span class="name">sana sanuzz</span>
-						</div>
-					</div>
-
-
-					<div class="slide swiper-slide">
-						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
-						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
-
-						<p>
-							Best aviation academy i have ever seen and i have an excellent academic experience. Good
-							facuilty, excellent teaching and good education enviornment. They gives me their full
-							support. I would highly recommend for anyone who interested to study aviation courses.😊
-
-						</p>
-						<i class="bx bxs-quote-alt-left quote-icon"></i>
-						<div class="details">
-							<span class="name">Subeesh Subi</span>
-						</div>
-					</div>
-
-
-					<div class="slide swiper-slide">
-						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
-						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
-
-						<p>
-							One of the best aviation institute in calicut.with good atmosphere and they provide
-							excellent classes and best facuilties. The management and staffs are very friendly and
-							supportive. I highly recommend this institute to all students who dreams good career in
-							aviation.
-
-						</p>
-						<i class="bx bxs-quote-alt-left quote-icon"></i>
-						<div class="details">
-							<span class="name">Ramshad Sh</span>
-						</div>
-					</div>
-
-
-					<div class="slide swiper-slide">
-						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
-						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
-
-						<p>
-							Cockpit aviation academy is one of the best aviation institute in calicut. They provide
-							excellent classes and the best facuilties for their students. And also the staffs and
-							management are very supportive snd caring. I highly recomend this institute to all
-							youngsters who dreams good career
-							in aviation.
-							management wwas veey suportive and caring. I highly recommend those dreams good career
-						</p>
-						<i class="bx bxs-quote-alt-left quote-icon"></i>
-						<div class="details">
-							<span class="name">Nayana Chandran C</span>
-						</div>
-					</div>
-
-
-					<div class="slide swiper-slide">
-						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
-						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
-
-						<p>
-							Best aviation academy i have ever seen bescause they are very supportive in all activities
-							and in my opinion this academy is something else ✨ cockpit Aviation has been giving great
-							opportunity for students who love to study aviation. They offer courses in Bba aviation&
-							Diploma aviation. It is surely the best institution.
-							The teachers are very friendly and helpful. I would surely recommend this academy for anyone
-							who wishes to pursue a career in aviation industry.
-
-						</p>
-						<i class="bx bxs-quote-alt-left quote-icon"></i>
-						<div class="details">
-							<span class="name">Hanna Dhils</span>
-						</div>
-					</div>
-
-
-					<div class="slide swiper-slide">
-						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
-						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
-
-						<p>
-							One of the best aviation institute in calicut.. Worth of money. I have Good experience with
-							cockpit aviation academy . I wish all the very best in coming years..
-							I suggest all my friends and relatives with out any doubt. Good infra.. Good training.. Good
-							hospitality.. The management and entire team were supportive and helphul... One of the best
-							Airport management training center in calicut.
-							Thank you cockpit .
-						</p>
-						<i class="bx bxs-quote-alt-left quote-icon"></i>
-						<div class="details">
-							<span class="name">Sangeeth P</span>
-						</div>
-					</div>
-
-					<div class="slide swiper-slide">
-						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
-						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
-
-						<p>
-							It's a good institution for aviation studies. Faculties are very friendly and well
-							experienced. They provide 100% placement assistance. Similarly, that too in the first
-							interview itself. I was able to attend the interview and got the job due to the support of
-							the faculties there.
-							Thank you 😊
-						</p>
-						<i class="bx bxs-quote-alt-left quote-icon"></i>
-						<div class="details">
-							<span class="name">Ania Shahinkichu</span>
-						</div>
-					</div>
-
-				</div>
-				<div class="swiper-button-next nav-btn"></div>
-				<div class="swiper-button-prev nav-btn"></div>
-				<div class="swiper-pagination"></div>
-			</div>
-		</div>
-	</section>
-
-	<section class="section-padding services-section section-2-bg mt-5" id="services" style="padding-top: 30px;
-	">
-		<div class="container">
-			<br><br>
-			<div class="heading-div">
-				<div class="section-title section-heading">
-
-					<h2 style="background: linear-gradient(to right, #bb913d 0%, #ffec5d 100%);
-							-webkit-background-clip: text;
-							-webkit-text-fill-color: transparent;"><b>Our Admission Procedures</b></h2>
-
-				</div>
-			</div>
-			<div class="row about-row">
-
-				<div class="m3 about-div col-sm-6">
-					<h5>Admission subject to qualifying COCKPIT AVIATION ACADEMY service proficiency assessment
-						test.
-					</h5>
-					<ul class="ul1">
-						<li class="li1">Basic proficiency in English. </li>
-						<li class="li1">Displaying a charming demeanour.</li>
-						<li class="li1">Selection will be on the basis of personal interview. </li>
-						<li class="li1">Educational loan assistance also available.</li>
-					</ul>
-				</div>
-				<br>
-
-				<div class="i1 about-div-img col-sm-6 mt-0">
-					<img src="assets/img/about1.png" alt="540x400" width="80%" class="img-responsive" />
-				</div>
-			</div>
-
-		</div>
-	</section>
-
-
-
-	<style>
-		/* Styles for the card */
-
-		.card {
-			width: 250px;
-			height: 274px;
-			margin: 10px;
-			padding: 20px;
-			background: rgba(0, 0, 0, 0);
-			padding: .4em;
-			border-radius: 6px;
-			transition: transform 0.3s;
-			display: inline-block;
-			border: 1px solid white;
-
-
-		}
-
-		.card-image {
-			background-color: rgba(236, 236, 236, 0);
-			width: 100%;
-			height: auto;
-			transition: transform 0.3s;
-
-			border-radius: 6px 6px 6px 6px;
-		}
-
-		.card-image:hover {
-			transform: scale(0.98);
-		}
-
-		.category {
-			text-transform: uppercase;
-			font-size: 0.9em;
-			font-weight: 600;
-			color: rgb(63, 121, 230);
-			text-align: center;
-			margin-bottom: -30px;
-		}
-
-		.category:hover {
-			cursor: pointer;
-		}
-
-		.heading {
-			font-weight: 600;
-			color: rgb(255, 255, 255);
-			padding: 7px;
-			text-align: center;
-			font-size: 20px;
-			margin-top: 5px;
-		}
-
-		.heading:hover {
-			cursor: pointer;
-		}
-
-		.author {
-			color: gray;
-			font-weight: 400;
-			font-size: 11px;
-			padding-top: 20px;
-		}
-
-		.name {
-			font-weight: 600;
-		}
-
-		.name:hover {
-			cursor: pointer;
-		}
-
-
-		/* Hover effect */
-		.card:hover {
-			transform: scale(1.05);
-			background-color: #000000;
-		}
-
-		/* Responsive layout */
-		@media (max-width: 767px) {
-			.card {
-				width: 45%;
-				margin: 10px;
-			}
-		}
-	</style>
-
-	<!-- <section>
-		<div class="container">
-			<div class="card">
-				<div class="card-image">
-					<img class="card-image" src="assets/img/av3.jpg">
-				</div>
-				<div class="heading"> Name Here
-				</div>
-				<div class="category"> Illustration </div>
-
-			</div>
-			<div class="card">
-				<div class="card-image">
-					<img class="card-image" src="assets/img/av3.jpg">
-				</div>
-				<div class="heading"> Name Here
-				</div>
-				<div class="category"> Illustration </div>
-
-			</div>
-			<div class="card">
-				<div class="card-image">
-					<img class="card-image" src="assets/img/av3.jpg">
-				</div>
-				<div class="heading"> Name Here
-				</div>
-				<div class="category"> Illustration </div>
-
-			</div>
-			<div class="card">
-				<div class="card-image">
-					<img class="card-image" src="assets/img/av3.jpg">
-				</div>
-				<div class="heading"> Name Here
-				</div>
-				<div class="category"> Illustration </div>
-
-			</div>
-			<div class="card">
-				<div class="card-image">
-					<img class="card-image" src="assets/img/av3.jpg">
-				</div>
-				<div class="heading"> Name Here
-				</div>
-				<div class="category"> Illustration </div>
-
-			</div>
-			<div class="card">
-				<div class="card-image">
-					<img class="card-image" src="assets/img/av3.jpg">
-				</div>
-				<div class="category"> Illustration </div>
-				<div class="heading"> Name Here
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-
-
-
-
-
-	<!--=================================  CONTACT END ==========================================-->
-	<!--=================================  FOOTER START ==========================================-->
-	<!-- <footer class="footer-section section-2-bg" style="background-color: black;">
-		<div class="container">
-			<div class="copyright text-center">
-				<p>Copyright &copy; 2023. All rights reserved. </p>
-			</div>
-		</div>
-	</footer> -->
-
-	<style>
 		.cs-fooer_main {
 			padding: 95px 0 35px;
 		}
@@ -1412,7 +1167,227 @@
 			-ms-flex-pack: center;
 			justify-content: center;
 		}
+
+		li a {
+			color: white;
+		}
+
+		li a:hover {
+			color: #d5b15d;
+		}
+
+		.cs-newsletter.cs-style1 .cs-newsletter_input {
+			height: 50px;
+			width: 100%;
+			border-radius: 10px;
+			background-color: #000;
+			border: none;
+			padding: 5px 90px 5px 15px;
+			outline: none;
+			margin-bottom: 6px;
+			color: #fff;
+		}
+
+		.card4 {
+			background-color: #383838;
+			padding: 20px;
+			border-radius: 20px;
+		}
 	</style>
+
+
+	<section class="section-padding services-section section-2-bg " id="services" style="margin-top: -90px;">
+		<div class="container">
+			<br><br>
+			<div class="heading-div">
+				<div class="section-title section-heading">
+
+					<h2 style="background: linear-gradient(to right, #bb913d 0%, #ffec5d 100%);
+							-webkit-background-clip: text;
+							-webkit-text-fill-color: transparent;"><b>Our Admission Procedures</b></h2>
+
+				</div>
+			</div>
+			<div class="row about-row">
+
+				<div class="m3 about-div col-sm-6">
+					<h5>Admission subject to qualifying COCKPIT AVIATION ACADEMY service proficiency assessment
+						test.
+					</h5>
+					<ul class="ul1">
+						<li class="li1">Basic proficiency in English. </li>
+						<li class="li1">Displaying a charming demeanour.</li>
+						<li class="li1">Selection will be on the basis of personal interview. </li>
+						<li class="li1">Educational loan assistance also available.</li>
+					</ul>
+				</div>
+				<br>
+
+				<div class="i1 about-div-img col-sm-6 mt-0">
+					<img src="assets/img/about1.png" alt="540x400" width="80%" class="img-responsive" />
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+
+	<section class=" services-section section-2-bg mb-5">
+
+		<div class="container">
+			<div class="testimonial mySwiper" style="margin-bottom: 40px;">
+				<div class="testi-content swiper-wrapper">
+					<div class="slide swiper-slide">
+						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
+						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
+
+						<p>
+							Iam really glad to be a part of the Cockpit Aviation Academy. They gave us excellent
+							classes, and the institute has the best faculties who are very experienced and
+							knowledgeable. The staff and the management are very friendly and supportive, and they
+							support us to improve our personalities and skills. I highly recommend Cockpit Aviation
+							Academy if you are passionate about aviation and plan to pursue it as a career.
+
+						</p>
+						<i class="bx bxs-quote-alt-left quote-icon"></i>
+						<div class="details">
+							<span class="name">Abhijith Abhi</span>
+						</div>
+					</div>
+					<div class="slide swiper-slide">
+						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
+						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
+
+						<p>
+							Cockpit Academy was a home away from home for me, with such friendly and supportive
+							management and staff. They provide the best faculties. If you have the passion and desire to
+							become cabin crew or ground staff, the cockpit has got your back. I highly recommend this
+							institute to those who are truly passionate about the aviation industry.
+						</p>
+						<i class="bx bxs-quote-alt-left quote-icon"></i>
+						<div class="details">
+							<span class="name">sana sanuzz</span>
+						</div>
+					</div>
+
+
+					<div class="slide swiper-slide">
+						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
+						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
+
+						<p>
+							Best aviation academy i have ever seen and i have an excellent academic experience. Good
+							facuilty, excellent teaching and good education enviornment. They gives me their full
+							support. I would highly recommend for anyone who interested to study aviation courses.😊
+
+						</p>
+						<i class="bx bxs-quote-alt-left quote-icon"></i>
+						<div class="details">
+							<span class="name">Subeesh Subi</span>
+						</div>
+					</div>
+
+
+					<div class="slide swiper-slide">
+						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
+						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
+
+						<p>
+							One of the best aviation institute in calicut.with good atmosphere and they provide
+							excellent classes and best facuilties. The management and staffs are very friendly and
+							supportive. I highly recommend this institute to all students who dreams good career in
+							aviation.
+
+						</p>
+						<i class="bx bxs-quote-alt-left quote-icon"></i>
+						<div class="details">
+							<span class="name">Ramshad Sh</span>
+						</div>
+					</div>
+
+
+					<div class="slide swiper-slide">
+						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
+						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
+
+						<p>
+							Cockpit aviation academy is one of the best aviation institute in calicut. They provide
+							excellent classes and the best facuilties for their students. And also the staffs and
+							management are very supportive snd caring. I highly recomend this institute to all
+							youngsters who dreams good career
+							in aviation.
+							management wwas veey suportive and caring. I highly recommend those dreams good career
+						</p>
+						<i class="bx bxs-quote-alt-left quote-icon"></i>
+						<div class="details">
+							<span class="name">Nayana Chandran C</span>
+						</div>
+					</div>
+
+
+					<div class="slide swiper-slide">
+						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
+						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
+
+						<p>
+							Best aviation academy i have ever seen bescause they are very supportive in all activities
+							and in my opinion this academy is something else ✨ cockpit Aviation has been giving great
+							opportunity for students who love to study aviation. They offer courses in Bba aviation&
+							Diploma aviation. It is surely the best institution.
+							The teachers are very friendly and helpful. I would surely recommend this academy for anyone
+							who wishes to pursue a career in aviation industry.
+
+						</p>
+						<i class="bx bxs-quote-alt-left quote-icon"></i>
+						<div class="details">
+							<span class="name">Hanna Dhils</span>
+						</div>
+					</div>
+
+
+					<div class="slide swiper-slide">
+						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
+						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
+
+						<p>
+							One of the best aviation institute in calicut.. Worth of money. I have Good experience with
+							cockpit aviation academy . I wish all the very best in coming years..
+							I suggest all my friends and relatives with out any doubt. Good infra.. Good training.. Good
+							hospitality.. The management and entire team were supportive and helphul... One of the best
+							Airport management training center in calicut.
+							Thank you cockpit .
+						</p>
+						<i class="bx bxs-quote-alt-left quote-icon"></i>
+						<div class="details">
+							<span class="name">Sangeeth P</span>
+						</div>
+					</div>
+
+					<div class="slide swiper-slide">
+						<img src="assets/img/google.png	" alt="" style="max-width: 20%;" class="image" />
+						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
+
+						<p>
+							It's a good institution for aviation studies. Faculties are very friendly and well
+							experienced. They provide 100% placement assistance. Similarly, that too in the first
+							interview itself. I was able to attend the interview and got the job due to the support of
+							the faculties there.
+							Thank you 😊
+						</p>
+						<i class="bx bxs-quote-alt-left quote-icon"></i>
+						<div class="details">
+							<span class="name">Ania Shahinkichu</span>
+						</div>
+					</div>
+
+				</div>
+				<div class="swiper-button-next nav-btn"></div>
+				<div class="swiper-button-prev nav-btn"></div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</section>
 
 	<!-- Start Footer -->
 	<footer class="cs-fooer" style="background-color: #08151f;">
@@ -1447,33 +1422,7 @@
 							</div>
 						</div>
 					</div>
-					<style>
-						li a {
-							color: white;
-						}
 
-						li a:hover {
-							color: #d5b15d;
-						}
-
-						.cs-newsletter.cs-style1 .cs-newsletter_input {
-							height: 50px;
-							width: 100%;
-							border-radius: 10px;
-							background-color: #000;
-							border: none;
-							padding: 5px 90px 5px 15px;
-							outline: none;
-							margin-bottom: 6px;
-							color: #fff;
-						}
-
-						.card4 {
-							background-color: #383838;
-							padding: 20px;
-							border-radius: 20px;
-						}
-					</style>
 
 					<div class="col-lg-4 col-sm-6">
 						<div class="cs-footer_item">
@@ -1531,31 +1480,7 @@
 		</div>
 	</footer>
 
-	<style>
-		.cursor {
-			position: fixed;
-			left: 0;
-			top: 0;
-			pointer-events: none;
-		}
-
-		.cursor--small {
-			width: 10px;
-			height: 10px;
-			left: -2.5px;
-			top: -2.5px;
-			border-radius: 50%;
-			z-index: 11000;
-			background: var(--color-text);
-		}
-
-		.cursor--canvas {
-			width: 100vw;
-			height: 100vh;
-			z-index: 12000;
-		}
-	</style>
-
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 	<script>
 		var swiper = new Swiper(".mySwiper", {
@@ -1570,8 +1495,13 @@
 				nextEl: ".swiper-button-next",
 				prevEl: ".swiper-button-prev",
 			},
+			autoplay: {
+				delay: 6000, // Set the delay in milliseconds (2 seconds in this case)
+				disableOnInteraction: false, // Set to false if you want the autoplay to continue after user interactions
+			},
 		});
 	</script>
+
 
 
 	<div class="cursor cursor--small"></div>
@@ -1717,58 +1647,6 @@
 			});
 	</script>
 
-	<!-- End Footer -->
-	<!--=================================  FOOTER END ==========================================-->
-	<!-- JQUERY LIBRARY -->
-	<script src="assets/js/vendor/jquery.min.js"></script>
-	<!-- BOOTSTRAP -->
-	<script src="assets/js/vendor/bootstrap.min.js"></script>
-	<!-- PIE CHART -->
-	<script src="assets/js/vendor/pie-chart/chart.js"></script>
-	<script src="assets/js/vendor/pie-chart/pie-chart.js"></script>
-
-	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-	<!-- SLIDER JS FILES -->
-	<script src="assets/js/vendor/slider/owl.carousel.min.js"></script>
-	<script src="assets/js/vendor/slider/owl-slider.js"></script>
-	<!-- IMAGE OVERLAY JS FILE -->
-	<script src="assets/js/vendor/img-overlay/modernizr.js"></script>
-	<script src="assets/js/vendor/img-overlay/overlay.js"></script>
-	<!-- SHUFFLE JS FILES-->
-	<script type="text/javascript" src="assets/js/vendor/shuffle/modernizr.custom.min.js"></script>
-	<script type="text/javascript" src="assets/js/vendor/shuffle/jquery.shuffle.js"></script>
-	<script type="text/javascript" src="assets/js/vendor/shuffle/page.js"></script>
-	<script type="text/javascript" src="assets/js/vendor/shuffle/evenheights.js"></script>
-	<script type="text/javascript" src="assets/js/vendor/shuffle/homepage.js"></script>
-	<!-- GALLERY LIGHTBOX -->
-	<script src="assets/js/vendor/light-box/ekko-lightbox.js"></script>
-	<script src="assets/js/vendor/light-box/lightbox.js"></script>
-	<!-- SUBSCRIBE MAILCHIMP -->
-	<script type="text/javascript" src="assets/js/vendor/subscribe/subscribe_validate.js"></script>
-	<!-- VALIDATION JS -->
-	<script type="text/javascript"
-		src="../../../../../www.pennyblacktemplates.com/demo/ws/feather/dark-demo/assets/js/custom/validation.html"> </script>
-	<!-- VALIDATION -->
-	<script type="text/javascript" src="assets/js/vendor/validate/jquery.validate.min.js"></script>
-	<!-- MENU JS -->
-	<script type="text/javascript" src="assets/js/custom/top-menu-3.js"></script>
-	<!-- THEME JS -->
-	<script type="text/javascript" src="assets/js/custom/custom.js"></script>
-
-	<script src="assets/js/loader.js"></script>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
-
-	<script src="assets2/js/plugins/jquery-3.6.0.min.js"></script>
-	<script src="assets2/js/plugins/isotope.pkg.min.js"></script>
-	<script src="assets2/js/plugins/jquery.slick.min.js"></script>
-	<script src="assets2/js/plugins/jquery.counter.min.js"></script>
-	<script src="assets2/js/plugins/lightgallery.min.js"></script>
-	<script src="assets2/js/plugins/wow.min.js"></script>
-	<script src="assets2/js/plugins/gsap.min.js"></script>
-	<script src="assets2/js/main.js"></script>
-
 	<script>
 		/* Whatsapp Chat Widget by www.bloggermix.com */
 		$(document).on("click", "#send-it", function () {
@@ -1844,19 +1722,7 @@
 	</script>
 
 
-	<script>
-		var swiper = new Swiper(".mySwiper", {
-			slidesPerView: 1,
-			centeredSlides: true,
-			spaceBetween: 30,
-			grabCursor: true,
-			loop: true,
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-			},
-		});
-	</script>
+
 	<script>
 		let currentIndex = 0;
 		const testimonials = document.querySelector('.testimonials');
@@ -1889,6 +1755,62 @@
 			nextTestimonial();
 		}, 3000);
 	</script>
+
+
+	<!-- End Footer -->
+	<!--=================================  FOOTER END ==========================================-->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<!-- JQUERY LIBRARY -->
+	<script src="assets/js/vendor/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<script src="assets/js/vendor/bootstrap.min.js"></script>
+	<!-- PIE CHART -->
+	<script src="assets/js/vendor/pie-chart/chart.js"></script>
+	<script src="assets/js/vendor/pie-chart/pie-chart.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<!-- SLIDER JS FILES -->
+	<script src="assets/js/vendor/slider/owl.carousel.min.js"></script>
+	<script src="assets/js/vendor/slider/owl-slider.js"></script>
+	<!-- IMAGE OVERLAY JS FILE -->
+	<script src="assets/js/vendor/img-overlay/modernizr.js"></script>
+	<script src="assets/js/vendor/img-overlay/overlay.js"></script>
+	<!-- SHUFFLE JS FILES-->
+	<script type="text/javascript" src="assets/js/vendor/shuffle/modernizr.custom.min.js"></script>
+	<script type="text/javascript" src="assets/js/vendor/shuffle/jquery.shuffle.js"></script>
+	<script type="text/javascript" src="assets/js/vendor/shuffle/page.js"></script>
+	<script type="text/javascript" src="assets/js/vendor/shuffle/evenheights.js"></script>
+	<script type="text/javascript" src="assets/js/vendor/shuffle/homepage.js"></script>
+	<!-- GALLERY LIGHTBOX -->
+	<script src="assets/js/vendor/light-box/ekko-lightbox.js"></script>
+	<script src="assets/js/vendor/light-box/lightbox.js"></script>
+	<!-- SUBSCRIBE MAILCHIMP -->
+	<script type="text/javascript" src="assets/js/vendor/subscribe/subscribe_validate.js"></script>
+	<!-- VALIDATION JS -->
+	<script type="text/javascript"
+		src="../../../../../www.pennyblacktemplates.com/demo/ws/feather/dark-demo/assets/js/custom/validation.html"> </script>
+	<!-- VALIDATION -->
+	<script type="text/javascript" src="assets/js/vendor/validate/jquery.validate.min.js"></script>
+	<!-- MENU JS -->
+	<script type="text/javascript" src="assets/js/custom/top-menu-3.js"></script>
+	<!-- THEME JS -->
+	<script type="text/javascript" src="assets/js/custom/custom.js"></script>
+
+	<script src="assets/js/loader.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+
+	<script src="assets2/js/plugins/jquery-3.6.0.min.js"></script>
+	<script src="assets2/js/plugins/isotope.pkg.min.js"></script>
+	<script src="assets2/js/plugins/jquery.slick.min.js"></script>
+	<script src="assets2/js/plugins/jquery.counter.min.js"></script>
+	<script src="assets2/js/plugins/lightgallery.min.js"></script>
+	<script src="assets2/js/plugins/wow.min.js"></script>
+	<script src="assets2/js/plugins/gsap.min.js"></script>
+	<script src="assets2/js/main.js"></script>
 </body>
 
 
