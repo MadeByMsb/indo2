@@ -40,6 +40,17 @@
 </head>
 
 <style>
+	@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+	.nav-btn {
+		height: 25px;
+		width: 25px;
+		border-radius: 50%;
+		transform: translateY(30px);
+		background-color: rgba(0, 0, 0, 0.1);
+		transition: 0.2s;
+	}
+
 	.about-div {
 		padding-left: 50px;
 	}
@@ -248,6 +259,23 @@
 		height: 100vh;
 		z-index: 12000;
 	}
+
+	.bi.bi-list {
+		font-size: 24px;
+		/* Adjust the size as needed */
+	}
+
+	@media (max-width: 600px) {
+		.nav>.nav-btn {
+			margin-right: 20px;
+			display: inline-block;
+			position: absolute;
+			right: 13px;
+			/* background: azure; */
+			border: 1px solid rgba(255, 255, 255, 0);
+			top: -10px;
+		}
+	}
 </style>
 
 
@@ -316,6 +344,7 @@
 		<div class="loader">
 			<div class="loading-text">
 				<img src="assets/img/logo.png" width="50%">
+
 			</div><!-- .loading-text -->
 		</div><!-- .loader -->
 	</div><!-- .loader-wrapper -->
@@ -329,13 +358,11 @@
 				</div>
 			</div>
 		</center>
-		<div class="nav-btn">
+		<a class="nav-btn" style="color: white;" data-toggle="modal" data-target="#exampleModal">
 			<label for="nav-check">
-				<span></span>
-				<span></span>
-				<span></span>
+				<i class="bi bi-list text-white" style="width: 150px;"></i>
 			</label>
-		</div>
+		</a>
 
 		<div class="nav-links" style="
 	width: 100%;
@@ -375,6 +402,10 @@
 		<div class="content-overlay">
 			<h1 class="ml2">Elevate Your Career With
 				Cockpit.</h1>
+			<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+				Launch demo modal
+			</button> -->
+
 
 
 			<!-- <h1 class=""><a href="#!" class="btn-shine">Elevate Your Career With
@@ -425,7 +456,7 @@
 			</div>
 		</div>
 		<div class="col-lg-6">
-			<video class="video-bg" src="vidoe3.mp4" muted autoplay loop playsinline></video>
+			<video class="video-bg" src="video4.mp4" muted autoplay loop playsinline></video>
 
 		</div>
 	</div>
@@ -873,8 +904,8 @@
 
 		/* swiper button css */
 		.nav-btn {
-			height: 40px;
-			width: 40px;
+			height: 25px;
+			width: 25px;
 			border-radius: 50%;
 			transform: translateY(30px);
 			background-color: rgba(0, 0, 0, 0.1);
@@ -1218,11 +1249,11 @@
 						<img src="assets/img/ratings.png" alt="" style="max-width: 20%;" class="image" />
 
 						<p>
-								Iam really glad to be a part of the Cockpit Aviation Academy. They gave us excellent
-								classes, and the institute has the best faculties who are very experienced and
-								knowledgeable. The staff and the management are very friendly and supportive, and they
-								support us to improve our personalities and skills. I highly recommend Cockpit Aviation
-								Academy if you are passionate about aviation and plan to pursue it as a career.
+							Iam really glad to be a part of the Cockpit Aviation Academy. They gave us excellent
+							classes, and the institute has the best faculties who are very experienced and
+							knowledgeable. The staff and the management are very friendly and supportive, and they
+							support us to improve our personalities and skills. I highly recommend Cockpit Aviation
+							Academy if you are passionate about aviation and plan to pursue it as a career.
 
 						</p>
 						<i class="bx bxs-quote-alt-left quote-icon"></i>
@@ -1732,6 +1763,60 @@
 	</script>
 
 
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close text-white" style="color: white;" data-dismiss="modal"
+						aria-label="Close">
+						<span style="color: white;" aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<a href="index.html">HOME</a><br>
+					<a href="about.html">ABOUT US</a><br>
+					<a href="programs.html">COURSES</a><br>
+					<a href="placements.html">PLACEMENTS</a><br>
+					<a href="gallery.html">GALLERY</a><br>
+					<a href="testimonials.html">TESTIMONIALS</a><br>
+					<a href="contact.html">CONTACT US</a><br>
+
+				</div>
+				<!-- <div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div> -->
+			</div>
+		</div>
+	</div>
+
+	<style>
+		.modal-content a {
+			color: white;
+			margin-bottom: 7px;
+		}
+
+		.modal-content a:hover {
+			color: rgb(219, 196, 23);
+			margin-bottom: 7px;
+		}
+
+
+		.modal-content {
+			position: relative;
+			background-color: #000;
+			-webkit-background-clip: padding-box;
+			background-clip: padding-box;
+			border: 1px solid #999;
+			border: 1px solid rgba(0, 0, 0, 0.2);
+			border-radius: 6px;
+			outline: 0;
+			-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+			box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+		}
+	</style>
 
 
 	<!-- End Footer -->
