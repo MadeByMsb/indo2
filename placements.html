@@ -446,7 +446,60 @@
 
 
         <div class="container">
+
+
             <div class="row">
+                <!-- Looping through 34 images -->
+                <!-- Change the image filenames as needed -->
+                <!-- Example images from 1.jpeg to 34.jpeg -->
+
+                <!-- Start Loop -->
+                <!-- Repeat this block 34 times with appropriate image numbers -->
+
+                <!-- Example for images 1 to 34 -->
+
+                <!-- Image 1 -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-team cs-style1">
+                        <div class="cs-member_thumb">
+                            <a href="assets/images/students/new/1.jpeg">
+                                <img src="assets/images/students/new/1.jpeg" alt="Member">
+                            </a>
+                            <div class="cs-member_overlay"></div>
+                        </div>
+                    </div>
+                    <div class="cs-height_80 cs-height_lg_30"></div>
+                </div>
+
+                <!-- Image 2 to 34 -->
+
+                <!-- Loop Starts -->
+                <script>
+                    let container = document.querySelector(".row");
+                    for (let i = 2; i <= 39; i++) {
+                        let div = document.createElement("div");
+                        div.className = "col-lg-3 col-sm-6";
+                        div.innerHTML = `
+                            <div class="cs-team cs-style1">
+                                <div class="cs-member_thumb">
+                                    <a href="assets/images/students/new/${i}.jpeg">
+                                        <img src="assets/images/students/new/${i}.jpeg" alt="Member">
+                                    </a>
+                                    <div class="cs-member_overlay"></div>
+                                </div>
+                            </div>
+                            <div class="cs-height_80 cs-height_lg_30"></div>
+                        `;
+                        container.appendChild(div);
+                    }
+                </script>
+            </div>
+            <div class="row">
+                <!-- NEWWWWWWWWWWWWWW -->
+
+
+
+                <!-- NEWWWWWWWWWWWWWW END-->
                 <div class="col-lg-3 col-sm-6">
                     <div class="cs-team cs-style1">
                         <div class="cs-member_thumb">
